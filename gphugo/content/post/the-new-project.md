@@ -1,7 +1,7 @@
 ---
 title: The New Project
 date: 2020-09-22T01:00:00.000+00:00
-hero: "/gphugo/images/hero-3.jpg"
+hero: "images/hero-3.jpg"
 excerpt: I have something else in the works
 authors:
 - ryanjbartley
