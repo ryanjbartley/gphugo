@@ -3,7 +3,7 @@ image:
 
 tasks:
   - init: git submodule update --init && git worktree add -B gh-pages gphugo/public origin/gh-pages
-    command: hugo server --baseUrl $(gp url 1313)/gphugo --appendPort=false -s gphugo
+    command: gp preview $(gp url 1313)/gphugo && hugo server --baseUrl $(gp url 1313)/gphugo --appendPort=false -s gphugo
 
 ports:
   - port: 1313
