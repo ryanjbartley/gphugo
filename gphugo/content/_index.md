@@ -1,7 +1,7 @@
 ---
-title: "Learning Gitpod (and other stuff)"
-featured_image: 'images/gohugo-default-sample-hero-image.jpg'
-description: "My attempt to blog on the platform I am learning... as I learn"
+hero:
+  heading: A Learning Blog
+  maxWidthPX: 652
+seo:
+  image: images/hero-2.jpg
 ---
-This is mostly just a proof of concept for things I want to try out on firebase or something similar once I get them working.
-I'll try and write about it as I do
