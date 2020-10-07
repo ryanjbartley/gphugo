@@ -7,10 +7,10 @@ sections:
 - type: heading
   label: Content
 - type: document
-  path: gphugo/content/_index.md
+  path: content/_index.md
   label: Home
 - type: directory
-  path: gphugo/content/post
+  path: content/post
   label: Posts
   create: all
   match: "**/*"
@@ -19,20 +19,20 @@ sections:
 - type: heading
   label: Data
 - type: directory
-  path: gphugo/content/authors
+  path: content/authors
   label: Authors
   create: all
   match: "**/_index.md"
   templates:
   - author
 - type: directory
-  path: gphugo/config/_default
+  path: config/_default
   label: Config
   create: all
   match: "**/*"
   new_doc_ext: yaml
-upload_dir: gphugo/static/images
-public_path: "/gphugo/images"
+upload_dir: static/images
+public_path: images
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
@@ -40,10 +40,10 @@ build:
   preview_env:
   - HUGO_ENV=staging
   - HUGO_VERSION=0.71.1
-  preview_output_directory: gphugo/public
+  preview_output_directory: public
   preview_docker_image: forestryio/hugo:latest
   mount_path: "/srv"
-  working_dir: "/srv/gphugo"
+  working_dir: "/srv"
   instant_preview_command: hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk
     -d public -b localhost
 version: 0.71.1
