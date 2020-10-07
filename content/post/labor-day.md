@@ -1,7 +1,7 @@
 ---
 title: Labor Day
 date: 2020-09-08T00:00:00Z
-hero: "images/hero-5.jpg"
+hero: "/images/hero-5.jpg"
 excerpt: It's actually a day for NOT labor
 tags: ["Personal", "Dev", "Ops"]
 authors:
