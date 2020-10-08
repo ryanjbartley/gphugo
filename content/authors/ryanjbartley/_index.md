@@ -1,7 +1,6 @@
 ---
 title: Ryan J Bartley
-bio: "I am an enormous lout who cannot get his verbage out  \nI will write a better
-  bio when astronauts don't run from Ohio\n"
+bio: "I have trouble describing myself, if you're interested in applying for the position, let me know"
 avatar: "/images/profile-01.jpeg"
 featured: true
 social:
