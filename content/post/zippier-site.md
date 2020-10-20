@@ -2,6 +2,7 @@
 alttext = "A heavily motion-blurred image of a biciclyst on a city street at night"
 authors = []
 date = 2020-10-20T03:25:00Z
+draft = true
 excerpt = "Using appropriately sized images can have that effect"
 hero = "images/luca-campioni-at3c0ka_qcq-unsplash-1.jpg"
 title = "Zippier site"
