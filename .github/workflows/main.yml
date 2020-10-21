@@ -28,8 +28,3 @@ jobs:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
         env: 
           HUGO_GOOGLEANALYTICS: ${{ secrets.HUGO_GOOGLEANALYTICS}}
-      - name: Hugo build and Firebase Deploy
-        uses: pulimento/github-action-hugo-deploy-to-firebase@master
-        if: ${{ secrets.secret_firebase_token }}
-        with:
-          firebase-token: ${{ secrets.secret_firebase_token }}
