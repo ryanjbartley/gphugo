@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@main
         with:
           submodules: true
-      - name: Publish Site
+      - name: Build and Deploy to gh-pages
         uses: chabad360/hugo-gh-pages@master
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
@@ -30,9 +30,7 @@ jobs:
           cname: founder.thankyoustrice.com
         env: 
           HUGO_GOOGLEANALYTICS: ${{ secrets.HUGO_GOOGLEANALYTICS}}
-      - name: Deploy to Firebase
-        uses: lowply/deploy-firebase@v0.0.3
+      - name: Build (again) and deploy to firebase
+        uses: wajahatkarim3/Hugo-On-Fire@master
         env:
-            FIREBASE_TOKEN: ${{ secrets.secret_firebase_token }}
-            FIREBASE_PROJECT: thank-you-st-rice
-            TARGET_BRANCH: firebase-public
+          FIREBASE_TOKEN: ${{ secrets.secret_firebase_token }}
