@@ -27,7 +27,7 @@ jobs:
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           cname: ${{ secrets.cname }}
-        env: 
+        env:
           HUGO_GOOGLEANALYTICS: ${{ secrets.HUGO_GOOGLEANALYTICS}}
       - name: Build (again) and deploy to firebase
         uses: wajahatkarim3/Hugo-On-Fire@master
