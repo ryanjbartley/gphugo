@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Publish to gh-pages
+name: Publish
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the main branch
@@ -22,9 +22,14 @@ jobs:
         uses: actions/checkout@main
         with:
           submodules: true
-      - name: Publish Site
+      - name: Build and Deploy to gh-pages
         uses: chabad360/hugo-gh-pages@master
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
-        env: 
+          cname: ${{ secrets.cname }}
+        env:
           HUGO_GOOGLEANALYTICS: ${{ secrets.HUGO_GOOGLEANALYTICS}}
+      - name: Build (again) and deploy to firebase
+        uses: wajahatkarim3/Hugo-On-Fire@master
+        env:
+          FIREBASE_TOKEN: ${{ secrets.secret_firebase_token }}

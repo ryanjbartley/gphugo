@@ -1,7 +1,7 @@
 DefaultContentLanguage = "en"
 Paginate = 6
 SectionPagesMenu = "main"
-baseURL = "https://ryanjbartley.github.io/gphugo/"
+baseURL = "https://founder.thankyoustrice.com/"
 enableRobotsTXT = true
 languageCode = "en-us"
 theme = "novela"
