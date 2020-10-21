@@ -33,4 +33,4 @@ jobs:
         env:
             FIREBASE_TOKEN: ${{ secrets.secret_firebase_token }}
             FIREBASE_PROJECT: thank-you-st-rice
-            TARGET_BRANCH: firebase-deploy
+            TARGET_BRANCH: firebase-public
