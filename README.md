@@ -39,3 +39,7 @@ You will want to select the `gh-pages` branch and `root` folder
 You will also need to replace my google verification file with yours so Google can verify you own your site
 
 That should have you ready to edit the basic details and start blogging with [Forestry.io](https://forestry.io)
+
+additional steps to document  
+add secrets.cname to build gh-pages with cname record  
+add secrets.secret_firebase_token to deploy to firebase (will require firebase initialization for correct repository)  

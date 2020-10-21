@@ -30,6 +30,7 @@ jobs:
         env:
           HUGO_GOOGLEANALYTICS: ${{ secrets.HUGO_GOOGLEANALYTICS}}
       - name: Build (again) and deploy to firebase
+        if: env.FIREBASE_TOKEN
         uses: wajahatkarim3/Hugo-On-Fire@master
         env:
           FIREBASE_TOKEN: ${{ secrets.secret_firebase_token }}
