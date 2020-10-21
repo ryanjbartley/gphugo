@@ -26,6 +26,8 @@ jobs:
         uses: chabad360/hugo-gh-pages@master
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
+          branch: firebase-public
+          cname: founder.thankyoustrice.com
         env: 
           HUGO_GOOGLEANALYTICS: ${{ secrets.HUGO_GOOGLEANALYTICS}}
       - name: Deploy to Firebase
